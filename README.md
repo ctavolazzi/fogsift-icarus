@@ -2,8 +2,11 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
 [![Python](https://img.shields.io/pypi/pyversions/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
+[![Downloads](https://img.shields.io/pypi/dm/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml/badge.svg)](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 > An AI-augmented daily workflow system.  
 > Never lose another thought.
@@ -165,7 +168,7 @@ A fresh Claude chat reading the daily note can follow links to the hub, read "Wh
 ## Preflight Categories
 
 | ID | Category | Covers |
-|---|---|---|
+| --- | --- | --- |
 | A | Harness Integrity | imports, deps, cache/runs dirs, PocketBase, Daily API |
 | B | Vault & Daily Note | vault exists, repo privacy, section fill ratio, dirty status |
 | C | Data Sources | weather/news/music/arxiv module health + cache freshness |

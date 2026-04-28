@@ -30,11 +30,20 @@ classifiers = [
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.6.0",
+]
+
 [project.urls]
 Homepage = "https://fogsift.com"
 Repository = "https://github.com/ctavolazzi/fogsift-icarus"
+Documentation = "https://github.com/ctavolazzi/fogsift-icarus#readme"
 Changelog = "https://github.com/ctavolazzi/fogsift-icarus/blob/main/CHANGELOG.md"
 "Bug Tracker" = "https://github.com/ctavolazzi/fogsift-icarus/issues"
+Discussions = "https://github.com/ctavolazzi/fogsift-icarus/discussions"
 
 [project.scripts]
 icarus = "fogsift_icarus.cli:main"
@@ -49,4 +58,35 @@ include = [
     "README.md",
     "CHANGELOG.md",
     "LICENSE",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.coverage.run]
+source = ["src/fogsift_icarus"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
 ]

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FogSift website
+    url: https://fogsift.com
+    about: Visit fogsift.com for more about the broader FogSift project.
+  - name: Question or discussion
+    url: https://github.com/ctavolazzi/fogsift-icarus/discussions
+    about: Open-ended questions, ideas, or workflow discussions belong in Discussions.

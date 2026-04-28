@@ -1,0 +1,15 @@
+docs:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.md', 'docs/**/*']
+
+test:
+  - changed-files:
+      - any-glob-to-any-file: ['tests/**/*']
+
+chore:
+  - changed-files:
+      - any-glob-to-any-file: ['.github/**/*', '.gitignore', '.editorconfig', 'pyproject.toml']
+
+feature:
+  - changed-files:
+      - any-glob-to-any-file: ['src/**/*.py']
