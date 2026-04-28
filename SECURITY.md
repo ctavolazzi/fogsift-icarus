@@ -13,7 +13,7 @@ Only the latest released version of `fogsift-icarus` receives security updates.
 
 If you discover a security vulnerability, **please do not open a public issue**.
 
-Email: **ctavolazzi@gmail.com** with subject line `[fogsift-icarus security]`.
+Email: **info@fogsift.com** with subject line `[fogsift-icarus security]`.
 
 Include:
 - Description of the vulnerability
