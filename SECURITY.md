@@ -2,12 +2,13 @@
 
 ## Supported Versions
 
-Only the latest released version of `fogsift-icarus` receives security updates.
+`fogsift-icarus` is pre-release software (v0.0.1, not yet on PyPI). The `main` branch is the only supported version. No stable release has been published.
 
-| Version  | Supported          |
-| -------- | ------------------ |
-| 0.0.x    | :white_check_mark: |
-| < 0.0.1  | :x:                |
+| Version       | Supported          |
+| ------------- | ------------------ |
+| main          | :white_check_mark: |
+| v0.0.1        | :white_check_mark: |
+| anything else | :x:                |
 
 ## Reporting a Vulnerability
 

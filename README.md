@@ -1,8 +1,5 @@
 # fogsift-icarus
 
-[![PyPI version](https://img.shields.io/pypi/v/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
-[![Python](https://img.shields.io/pypi/pyversions/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
-[![Downloads](https://img.shields.io/pypi/dm/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml/badge.svg)](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -11,14 +8,18 @@
 > An AI-augmented daily workflow system.  
 > Never lose another thought.
 
-**v0.0.1 — Initial Release** · [Changelog](CHANGELOG.md) · [PyPI](https://pypi.org/project/fogsift-icarus/)
+**v0.0.1 — pre-release** · [Changelog](CHANGELOG.md) · Not yet on PyPI — clone to use
 
 ---
 
 ## Install
 
+> **Not yet on PyPI.** PyPI packaging planned for v0.1.0. Clone and install in editable mode to use now.
+
 ```bash
-pip install fogsift-icarus
+git clone https://github.com/ctavolazzi/fogsift-icarus.git
+cd fogsift-icarus
+pip install -e .
 ```
 
 ```bash
@@ -190,8 +191,8 @@ A fresh Claude chat reading the daily note can follow links to the hub, read "Wh
 
 ## Status
 
-`v0.0.1` — **released**. In daily active use.  
-Packaging for general install is live. Full harness extraction and config system coming in v0.1.0.
+`v0.0.1` — **pre-release**. In daily active use.  
+Not yet on PyPI. Clone to use. Full engine extraction, config system, and PyPI publish planned for v0.1.0.
 
 ---
 

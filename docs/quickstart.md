@@ -4,8 +4,12 @@ Get fogsift-icarus running in under 5 minutes.
 
 ## Install
 
+> **Not yet on PyPI.** Clone and install in editable mode.
+
 ```bash
-pip install fogsift-icarus
+git clone https://github.com/ctavolazzi/fogsift-icarus.git
+cd fogsift-icarus
+pip install -e .
 ```
 
 Verify:
