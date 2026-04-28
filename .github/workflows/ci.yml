@@ -45,10 +45,10 @@ jobs:
         run: uv python install ${{ matrix.python-version }}
 
       - name: Install package + test deps
-        run: uv pip install -e ".[dev]" --python ${{ matrix.python-version }}
+        run: uv pip install --system -e ".[dev]"
 
       - name: Run tests with coverage
-        run: uv run --python ${{ matrix.python-version }} pytest tests/ -v --cov=fogsift_icarus --cov-report=term-missing
+        run: uv run pytest tests/ -v --cov=fogsift_icarus --cov-report=term-missing
 
   publish:
     needs: test
