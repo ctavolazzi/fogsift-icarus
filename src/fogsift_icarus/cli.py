@@ -18,7 +18,8 @@ def main():
         description="fogsift-icarus — AI-augmented daily workflow system.",
     )
     parser.add_argument(
-        "--version", "-V",
+        "--version",
+        "-V",
         action="version",
         version=f"fogsift-icarus {__version__}",
     )

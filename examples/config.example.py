@@ -24,8 +24,8 @@ POCKETBASE_URL = "http://127.0.0.1:8090"
 DAILY_API_URL = None
 
 # Idempotency thresholds.
-WIP_THRESHOLD_HOURS = 24       # git_audit: dirty file → WIP if mtime within N hrs
-ROLLOVER_LOOKBACK_DAYS = 7     # plan_rollover: scan N days for recurring blockers
+WIP_THRESHOLD_HOURS = 24  # git_audit: dirty file → WIP if mtime within N hrs
+ROLLOVER_LOOKBACK_DAYS = 7  # plan_rollover: scan N days for recurring blockers
 
 # Permissions: sections Claude is allowed to auto-fill.
 AI_WRITABLE = {

@@ -13,4 +13,5 @@ def test_version_is_string():
 
 def test_cli_importable():
     from fogsift_icarus import cli
+
     assert callable(cli.main)
