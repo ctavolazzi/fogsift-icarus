@@ -9,7 +9,7 @@ Usage:
 import argparse
 import sys
 
-from . import __version__, __url__
+from . import __url__, __version__
 
 
 def main():
