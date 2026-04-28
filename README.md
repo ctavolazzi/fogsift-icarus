@@ -1,7 +1,27 @@
 # fogsift-icarus
 
+[![PyPI version](https://img.shields.io/pypi/v/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
+[![Python](https://img.shields.io/pypi/pyversions/fogsift-icarus.svg)](https://pypi.org/project/fogsift-icarus/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml/badge.svg)](https://github.com/ctavolazzi/fogsift-icarus/actions/workflows/ci.yml)
+
 > An AI-augmented daily workflow system.  
 > Never lose another thought.
+
+**v0.0.1 — Initial Release** · [Changelog](CHANGELOG.md) · [PyPI](https://pypi.org/project/fogsift-icarus/)
+
+---
+
+## Install
+
+```bash
+pip install fogsift-icarus
+```
+
+```bash
+icarus --version   # fogsift-icarus 0.0.1
+icarus info        # links + harness location
+```
 
 ---
 
@@ -17,7 +37,7 @@ The core idea: **your vault is a faithful representation of your working mind**.
 
 ## The Daily Ritual
 
-```
+```text
 Morning                         Evening
 ───────                         ───────
 /spin-up                        /wrap-up
@@ -45,7 +65,7 @@ plan_rollover.py     →    daily_plan.lock()
 ## Components
 
 | Module | Does |
-|---|---|
+| --- | --- |
 | `preflight.py` | 7-category readiness check. HALT/FAIL/WARN/PASS per check. |
 | `spin_up.py` | Morning orchestrator. Populates daily note. Creates today's plan. |
 | `wrap_up.py` | Evening orchestrator. Fills commits section, locks plan, vault backup. |
@@ -63,7 +83,7 @@ plan_rollover.py     →    daily_plan.lock()
 
 ## Architecture
 
-```
+```text
 Obsidian Vault (Personal-Remote-Vault/)
 ├── Daily Notes/YYYY-MM-DD.md        ← entry point
 │   ├── plan: [[Plans/...]]
@@ -109,7 +129,7 @@ SimpleAgentOS/ (harness code)
 
 ## Plan Lifecycle
 
-```
+```text
 spin_up.py creates today's plan
     ↓
 plan is ACTIVE — editable, living document
@@ -156,27 +176,6 @@ A fresh Claude chat reading the daily note can follow links to the hub, read "Wh
 
 ---
 
-## Install
-
-```bash
-# Clone
-git clone https://github.com/FogSift/fogsift-icarus
-cd fogsift-icarus
-
-# Dependencies (stdlib-first — most modules have none)
-pip install -e .
-
-# Configure vault path
-cp config.example.py config.py
-# Edit VAULT_ROOT in config.py
-
-# Run preflight
-cd _experiments/SimpleAgentOS
-python3 preflight.py
-```
-
----
-
 ## Philosophy
 
 1. **Never lose another thought.** Captured URLs, preserved thoughts, satellites, journal entries — all routes lead to the vault.
@@ -188,8 +187,15 @@ python3 preflight.py
 
 ## Status
 
-`v0.1.0-alpha` — in daily use. Not yet packaged for general install.
+`v0.0.1` — **released**. In daily active use.  
+Packaging for general install is live. Full harness extraction and config system coming in v0.1.0.
 
 ---
 
-*fogsift-icarus · FogSift · [fogsift.com](https://fogsift.com)*
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+*fogsift-icarus · [FogSift](https://fogsift.com) · [ctavolazzi](https://github.com/ctavolazzi)*

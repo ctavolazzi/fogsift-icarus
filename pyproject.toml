@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fogsift-icarus"
+version = "0.0.1"
+description = "AI-augmented daily workflow system. Never lose another thought."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Christopher Tavolazzi", email = "ctavolazzi@gmail.com" }
+]
+keywords = [
+    "productivity", "obsidian", "claude", "ai", "daily-workflow",
+    "harness", "zettelkasten", "personal-knowledge-management"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+    "Topic :: Office/Business :: Scheduling",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://fogsift.com"
+Repository = "https://github.com/ctavolazzi/fogsift-icarus"
+Changelog = "https://github.com/ctavolazzi/fogsift-icarus/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/ctavolazzi/fogsift-icarus/issues"
+
+[project.scripts]
+icarus = "fogsift_icarus.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fogsift_icarus"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/",
+    "tests/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+]
