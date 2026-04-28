@@ -1,26 +1,35 @@
 ---
-name: Bug report
-about: Something broke in the harness
-labels: bug
+name: Bug Report
+about: Report a bug to help us improve
+title: "[BUG] "
+labels: type:fix
+assignees: ''
+
 ---
 
-## What happened
+## Description
+A clear, concise description of the bug.
 
-<!-- What did you expect vs. what occurred? -->
+## Steps to Reproduce
+1. ...
+2. ...
+3. ...
 
-## Reproduce
+## Expected Behavior
+What should happen?
 
-```bash
-# Minimal steps to reproduce
-```
+## Actual Behavior
+What actually happened?
 
 ## Environment
+- OS: (e.g., macOS 13.5)
+- Python: (e.g., 3.12)
+- fogsift-icarus version: (e.g., 0.0.1)
 
-- OS:
-- Python version:
-- fogsift-icarus version:
-- Obsidian version (if relevant):
+## Logs / Output
+```
+Paste any error messages or relevant output here
+```
 
-## Logs
-
-<!-- paste preflight output or traceback -->
+## Additional Context
+Any other context or screenshots?

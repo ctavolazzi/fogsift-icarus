@@ -1,17 +1,23 @@
 ---
-name: Feature request
-about: Idea for the harness
-labels: enhancement
+name: Feature Request
+about: Suggest an idea for fogsift-icarus
+title: "[FEATURE] "
+labels: type:feat
+assignees: ''
+
 ---
 
-## The gap
+## Description
+A clear, concise description of the feature.
 
-<!-- What can't you do today that you want to do? -->
+## Use Case
+Why would this be useful? What problem does it solve?
 
-## Proposed solution
+## Proposed Solution
+How should it work?
 
-<!-- What would the ideal behavior look like? -->
+## Alternatives Considered
+Any other approaches?
 
-## Alternatives considered
-
-<!-- Other approaches you thought about -->
+## Additional Context
+Any screenshots, examples, or relevant links?
